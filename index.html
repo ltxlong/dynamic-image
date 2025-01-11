@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>链接管理系统</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module">
+      import { createApp } from 'vue'
+      import { createPinia } from 'pinia'
+      import App from './src/App.vue'
+      import { router } from './src/router'
+      import './src/index.css'
+
+      const app = createApp(App)
+      app.use(createPinia())
+      app.use(router)
+      app.mount('#app')
+    </script>
+  </body>
+</html> 

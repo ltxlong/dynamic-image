@@ -1,2 +1,1 @@
-# dynamic-image
-灵动小尾巴~
+# dynamic-signature
