@@ -1,4 +1,4 @@
-# dynamic-signature
+# dynamic-image
 
 构建命令：npm run build
 
