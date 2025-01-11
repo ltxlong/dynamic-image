@@ -20,7 +20,7 @@
           <span class="font-semibold text-sky-300">Cloudflare Pages</span> 
           的智能图片链接管理系统
           <a 
-            href="" 
+            href="https://github.com/ltxlong/dynamic-image" 
             target="_blank"
             class="text-slate-300 hover:text-white transition-colors"
             title="GitHub 仓库"
