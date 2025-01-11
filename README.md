@@ -1,14 +1,14 @@
 # dynamic-image
 
-fork 本项目，然后直接部署到cloudflare pages
+💕fork 本项目，然后直接部署到cloudflare pages💕期待你的star
 
 构建命令：npm run build
 
 构建输出目录：dist
 
-管理后台密码变量名：ADMIN_PASSWORD
+环境变量-管理后台密码变量名：ADMIN_PASSWORD
 
-KV数据库变量名：DYNAMIC_IMAGE
+绑定-KV数据库变量名：DYNAMIC_IMAGE
 
 图片获取接口：/api
 
