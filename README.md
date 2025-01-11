@@ -14,6 +14,6 @@ KV数据库变量名：DYNAMIC_IMAGE
 
 ![](https://github.com/ltxlong/dynamic-image/raw/main/demo/dynamic_image_home.png)
 
-![](https://github.com/ltxlong/dynamic-image/raw/main/demo/dynamic_image_home.png)
+![](https://github.com/ltxlong/dynamic-image/raw/main/demo/dynamic_image_admin.png)
 
-![](https://api.star-history.com/svg?repos=ltxlong/dynamic-image&type=Date)
+![Star History Chart](https://api.star-history.com/svg?repos=ltxlong/dynamic-image&type=Date)
