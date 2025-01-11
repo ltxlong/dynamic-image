@@ -11,3 +11,9 @@ KV数据库变量名：DYNAMIC_IMAGE
 图片获取接口：/api
 
 获取所有图片配置：/api/links
+
+![](https://github.com/ltxlong/dynamic-image/raw/main/demo/dynamic_image_home.png)
+
+![](https://github.com/ltxlong/dynamic-image/raw/main/demo/dynamic_image_home.png)
+
+![](https://api.star-history.com/svg?repos=ltxlong/dynamic-image&type=Date)
