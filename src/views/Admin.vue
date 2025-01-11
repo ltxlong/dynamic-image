@@ -882,7 +882,7 @@
                 <div class="grid grid-cols-3 gap-4">
                   <!-- 新增链接弹窗中的月标签选择 -->
                   <div class="grid gap-1 content-start">
-                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">月标签</span>
+                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">月标签（可多选）</span>
                     <div class="grid grid-cols-3 auto-rows-min gap-4 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
                       <button
                         v-for="month in 12"
@@ -902,7 +902,7 @@
 
                   <!-- 新增链接弹窗中的周标签选择 -->
                   <div class="grid gap-1 content-start">
-                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">周标签</span>
+                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">周标签（可多选）</span>
                     <div class="grid auto-rows-min gap-2 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
                       <button
                         v-for="day in 7"
@@ -1061,7 +1061,7 @@
                 <div class="grid grid-cols-3 gap-4">
                   <!-- 编辑弹窗中的月标签选择 -->
                   <div class="grid gap-1 content-start">
-                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">月标签</span>
+                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">月标签（可多选）</span>
                     <div class="grid grid-cols-3 auto-rows-min gap-4 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
                       <button
                         v-for="month in 12"
@@ -1081,7 +1081,7 @@
 
                   <!-- 编辑弹窗中的周标签选择 -->
                   <div class="grid gap-1 content-start">
-                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">周标签</span>
+                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">周标签（可多选）</span>
                     <div class="grid auto-rows-min gap-2 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
                       <button
                         v-for="day in 7"
