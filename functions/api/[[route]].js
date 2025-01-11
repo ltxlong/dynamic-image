@@ -64,8 +64,8 @@ export async function onRequest(context) {
   }
 
   // 检查是否使用 KV 数据库
-  const useKV = !!env.DYNAMIC_SIGNATURE
-  const db = useKV ? env.DYNAMIC_SIGNATURE : await connectToDatabase(env.DATABASE_URL)
+  const useKV = !!env.DYNAMIC_IMAGE
+  const db = useKV ? env.DYNAMIC_IMAGE : await connectToDatabase(env.DATABASE_URL)
   
   // API 路由处理
   if (url.pathname === '/api') {
