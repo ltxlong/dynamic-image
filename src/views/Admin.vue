@@ -1942,4 +1942,15 @@ select::-ms-expand {
 :deep(.combobox-options li) {
   text-align: center !important;
 }
+
+/* 显示模式和链接搜索下拉框的文字居中样式 */
+:deep(.relative button),
+:deep(.relative input),
+:deep(.listbox-options div),
+:deep(.combobox-options div),
+:deep(.listbox-options li),
+:deep(.combobox-options li) {
+  text-align: center !important;
+}
+
 </style>
