@@ -307,7 +307,7 @@
                 </svg>
                 <input 
                   v-model="searchQuery"
-                  class="w-full pl-9 px-2.5 py-2.5 rounded-lg text-center"
+                  class="w-full pl-9 px-2.5 py-2.5 rounded-lg"
                   :class="[
                     isDark 
                       ? 'bg-slate-800/50 text-white placeholder-slate-400 border border-white/10 focus:border-sky-500 focus:outline-none' 
