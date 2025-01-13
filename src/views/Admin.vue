@@ -1927,4 +1927,19 @@ select::-ms-expand {
 .group:hover > div[class*="absolute"].top-full {
   transform: translateY(0);
 }
+
+.listbox-button,
+.combobox-input,
+.listbox-option,
+.combobox-option {
+  text-align: center !important;
+}
+
+/* 显示模式和链接搜索下拉框的文字居中样式 */
+:deep(.listbox-button),
+:deep(.combobox-input),
+:deep(.listbox-options li),
+:deep(.combobox-options li) {
+  text-align: center !important;
+}
 </style>
