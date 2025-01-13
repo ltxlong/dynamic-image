@@ -1766,7 +1766,7 @@ function toggleWeekTag(day, target) {
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 300ms;
 }
 
 /* 美化滚动条 */
