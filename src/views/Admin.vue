@@ -228,7 +228,7 @@
                 </div>
                 <select 
                   v-model="displayMode"
-                  class="w-[30%] px-2.5 py-2.5 rounded-lg text-center"
+                  class="w-[30%] pl-2.5 py-2.5 rounded-lg text-center"
                   :class="[
                     isDark 
                       ? 'bg-slate-800/50 text-white border border-white/10 focus:border-sky-500 focus:outline-none' 
@@ -318,7 +318,7 @@
               </div>
               <select 
                 v-model="filterType"
-                class="w-40 px-2.5 py-2.5 rounded-lg text-center"
+                class="w-40 pl-2.5 py-2.5 rounded-lg text-center"
                 :class="[
                   isDark 
                     ? 'bg-slate-800/50 text-white border border-white/10 focus:border-sky-500 focus:outline-none' 
