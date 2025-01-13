@@ -721,11 +721,11 @@
                       <span class="block text-xs mb-2"
                         :class="[isDark ? 'text-gray-400' : 'text-gray-500']"
                       >月标签</span>
-                      <div class="flex flex-wrap gap-2">
+                      <div class="grid grid-cols-3 gap-2">
                         <span 
                           v-for="month in viewingLink.monthTags" 
                           :key="month"
-                          class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800"
+                          class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 justify-center"
                         >
                           {{ month }}月
                         </span>
@@ -742,10 +742,12 @@
                       <span class="block text-xs mb-2"
                         :class="[isDark ? 'text-gray-400' : 'text-gray-500']"
                       >周标签</span>
-                      <div class="flex flex-wrap gap-2">
+                      <div class="grid grid-cols-3 gap-2">
                         <span 
                           v-for="day in viewingLink.weekTags" 
                           :key="day"
+                          class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 justify-center"
+                        >
                           class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800"
                         >
                           星期{{ ['日', '一', '二', '三', '四', '五', '六'][day % 7] }}
