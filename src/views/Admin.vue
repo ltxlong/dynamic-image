@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen transition-colors duration-300"
+  <div class="min-h-screen"
     :class="[
       isDark 
         ? 'bg-gradient-to-br from-slate-800 to-slate-900' 
@@ -12,7 +12,7 @@
     ></div>
 
     <!-- 顶部导航栏 -->
-    <nav class="relative z-10 border-b transition-colors duration-300"
+    <nav class="relative z-10 border-b"
       :class="[
         isDark 
           ? 'bg-white/5 backdrop-blur-lg border-white/10' 
@@ -21,7 +21,7 @@
     >
       <div class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
-          <h1 class="text-2xl font-bold tracking-wide transition-colors"
+          <h1 class="text-2xl font-bold tracking-wide"
             :class="[isDark ? 'text-white' : 'text-slate-800']"
           >
             图片链接管理系统
@@ -31,18 +31,18 @@
             <!-- 主题切换开关 -->
             <button 
               @click="toggleTheme"
-              class="relative inline-flex h-7 w-12 items-center rounded-full transition-colors duration-300"
+              class="relative inline-flex h-7 w-12 items-center rounded-full"
               :class="[isDark ? 'bg-sky-600' : 'bg-slate-200']"
             >
               <span class="sr-only">切换主题</span>
               <!-- 滑块 -->
               <span
-                class="absolute left-0.5 inline-block h-6 w-6 transform rounded-full bg-white transition-transform duration-300 shadow-sm"
+                class="absolute left-0.5 inline-block h-6 w-6 transform rounded-full bg-white shadow-sm"
                 :class="[isDark ? 'translate-x-5' : 'translate-x-0']"
               ></span>
               <!-- 太阳图标 -->
               <svg 
-                class="absolute left-0.5 w-6 h-6 p-1 transition-opacity duration-300"
+                class="absolute left-0.5 w-6 h-6 p-1"
                 :class="[isDark ? 'opacity-0' : 'opacity-100 text-amber-500']"
                 fill="none" 
                 stroke="currentColor" 
@@ -52,7 +52,7 @@
               </svg>
               <!-- 月亮图标 -->
               <svg 
-                class="absolute right-0.5 w-6 h-6 p-1 transition-opacity duration-300"
+                class="absolute right-0.5 w-6 h-6 p-1"
                 :class="[isDark ? 'opacity-100 text-slate-800' : 'opacity-0']"
                 fill="none" 
                 stroke="currentColor" 
@@ -882,7 +882,7 @@
                 <div class="grid grid-cols-3 gap-4">
                   <!-- 新增链接弹窗中的月标签选择 -->
                   <div class="grid gap-1 content-start">
-                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">月标签（可多选）</span>
+                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">月标签</span>
                     <div class="grid grid-cols-3 auto-rows-min gap-4 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
                       <button
                         v-for="month in 12"
@@ -902,7 +902,7 @@
 
                   <!-- 新增链接弹窗中的周标签选择 -->
                   <div class="grid gap-1 content-start">
-                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">周标签（可多选）</span>
+                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">周标签</span>
                     <div class="grid auto-rows-min gap-2 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
                       <button
                         v-for="day in 7"
@@ -1061,7 +1061,7 @@
                 <div class="grid grid-cols-3 gap-4">
                   <!-- 编辑弹窗中的月标签选择 -->
                   <div class="grid gap-1 content-start">
-                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">月标签（可多选）</span>
+                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">月标签</span>
                     <div class="grid grid-cols-3 auto-rows-min gap-4 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
                       <button
                         v-for="month in 12"
@@ -1081,7 +1081,7 @@
 
                   <!-- 编辑弹窗中的周标签选择 -->
                   <div class="grid gap-1 content-start">
-                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">周标签（可多选）</span>
+                    <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">周标签</span>
                     <div class="grid auto-rows-min gap-2 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
                       <button
                         v-for="day in 7"
@@ -1766,6 +1766,7 @@ function toggleWeekTag(day, target) {
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 /* 美化滚动条 */
