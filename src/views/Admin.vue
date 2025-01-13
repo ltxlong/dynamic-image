@@ -228,7 +228,7 @@
                 </div>
                 <select 
                   v-model="displayMode"
-                  class="w-[30%] p-2.5 rounded-lg"
+                  class="w-[30%] px-2.5 py-2.5 rounded-lg text-center"
                   :class="[
                     isDark 
                       ? 'bg-slate-800/50 text-white border border-white/10 focus:border-sky-500 focus:outline-none' 
@@ -302,12 +302,12 @@
             <!-- 搜索和过滤 -->
             <div class="flex gap-4 mb-6">
               <div class="flex-1 relative">
-                <svg class="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-gray-400 absolute left-2 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
                 <input 
                   v-model="searchQuery"
-                  class="w-full pl-10 pr-4 py-2.5 rounded-lg"
+                  class="w-full pl-9 px-2.5 py-2.5 rounded-lg text-center"
                   :class="[
                     isDark 
                       ? 'bg-slate-800/50 text-white placeholder-slate-400 border border-white/10 focus:border-sky-500 focus:outline-none' 
@@ -318,7 +318,7 @@
               </div>
               <select 
                 v-model="filterType"
-                class="w-40 p-2.5 rounded-lg"
+                class="w-40 px-2.5 py-2.5 rounded-lg text-center"
                 :class="[
                   isDark 
                     ? 'bg-slate-800/50 text-white border border-white/10 focus:border-sky-500 focus:outline-none' 
