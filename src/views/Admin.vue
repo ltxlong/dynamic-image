@@ -525,7 +525,7 @@
                       <span 
                         v-for="day in link.weekTags" 
                         :key="day"
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 w-16 justify-center"
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 w-16 justify-center"
                       >
                         星期{{ ['日', '一', '二', '三', '四', '五', '六'][day % 7] }}
                       </span>
@@ -747,8 +747,6 @@
                           v-for="day in viewingLink.weekTags" 
                           :key="day"
                           class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 justify-center"
-                        >
-                          class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800"
                         >
                           星期{{ ['日', '一', '二', '三', '四', '五', '六'][day % 7] }}
                         </span>
