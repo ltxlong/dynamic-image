@@ -392,7 +392,7 @@
               >
                 <tr v-for="link in filteredLinks" 
                   :key="link.id"
-                  class="transition-colors duration-200"
+                  class=""
                   :class="[
                     isDark 
                       ? 'hover:bg-slate-700/50 text-slate-300' 
@@ -555,7 +555,7 @@
                     <div class="flex flex-col items-center space-y-2">
                       <button
                         @click="viewLink(link)"
-                        class="inline-flex items-center justify-center px-3 py-1.5 w-24 rounded-md text-sm font-medium transition-colors duration-200"
+                        class="inline-flex items-center justify-center px-3 py-1.5 w-24 rounded-md text-sm font-medium"
                         :class="[
                           isDark 
                             ? 'bg-slate-700/50 text-sky-400 hover:bg-slate-600/50' 
@@ -571,7 +571,7 @@
 
                       <button
                         @click="editLink(link)"
-                        class="inline-flex items-center justify-center px-3 py-1.5 w-24 rounded-md text-sm font-medium transition-colors duration-200"
+                        class="inline-flex items-center justify-center px-3 py-1.5 w-24 rounded-md text-sm font-medium"
                         :class="[
                           isDark 
                             ? 'bg-slate-700/50 text-emerald-400 hover:bg-slate-600/50' 
@@ -586,7 +586,7 @@
 
                       <button
                         @click="confirmDeleteLink(link)"
-                        class="inline-flex items-center justify-center px-3 py-1.5 w-24 rounded-md text-sm font-medium transition-colors duration-200"
+                        class="inline-flex items-center justify-center px-3 py-1.5 w-24 rounded-md text-sm font-medium"
                         :class="[
                           isDark 
                             ? 'bg-slate-700/50 text-rose-400 hover:bg-slate-600/50' 
