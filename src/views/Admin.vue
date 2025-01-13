@@ -66,7 +66,7 @@
             <button 
               v-if="isAuthenticated"
               @click="logout"
-              class="flex items-center gap-2 px-4 py-2 rounded-lg transition-colors duration-300"
+              class="flex items-center gap-2 px-4 py-2 rounded-lg"
               :class="[
                 isDark 
                   ? 'bg-white/10 backdrop-blur-lg border border-white/10 text-white hover:bg-white/20' 
@@ -150,7 +150,7 @@
       <!-- 其他内容保持不变 -->
       <div v-else class="space-y-6">
         <!-- 显示模式设置卡片 -->
-        <div class="rounded-lg shadow-sm overflow-hidden transition-colors duration-300"
+        <div class="rounded-lg shadow-sm overflow-hidden"
           :class="[
             isDark 
               ? 'bg-slate-800/50 border border-white/10' 
@@ -263,7 +263,7 @@
         </div>
 
         <!-- 链接列表卡片 -->
-        <div class="rounded-lg shadow-sm overflow-hidden transition-colors duration-300"
+        <div class="rounded-lg shadow-sm overflow-hidden"
           :class="[
             isDark 
               ? 'bg-slate-800/50 border border-white/10' 
@@ -332,7 +332,7 @@
             </div>
 
             <!-- 表格部分 -->
-            <table class="min-w-full divide-y transition-colors duration-300"
+            <table class="min-w-full divide-y"
               :class="[
                 isDark 
                   ? 'divide-white/10' 
