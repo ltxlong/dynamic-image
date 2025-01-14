@@ -1465,13 +1465,16 @@ function editLink(link) {
 }
 
 async function saveEdit() {
-  if (!editingLink.value?.url?.trim()) {
+  const trimmedUrl = editingLink.value?.url?.trim()
+  if (!trimmedUrl) {
     showNotification('链接地址不能为空', 'error')
     return
   }
   try {
     const linkToSave = {
       ...editingLink.value,
+      url: trimmedUrl,
+      description: editingLink.value.description?.trim() || '',
       monthTags: (editingLink.value.monthTags || []).sort((a, b) => a - b),
       weekTags: (editingLink.value.weekTags || []).sort((a, b) => a - b),
       holidayTag: editingLink.value.holidayTag || null
@@ -1529,13 +1532,16 @@ function showNotification(message, type = 'success') {
 }
 
 async function addNewLink() {
-  if (!newLink.value.url?.trim()) {
+  const trimmedUrl = newLink.value.url?.trim()
+  if (!trimmedUrl) {
     showNotification('链接地址不能为空', 'error')
     return
   }
   try {
     const linkToAdd = {
       ...newLink.value,
+      url: trimmedUrl,
+      description: newLink.value.description?.trim() || '',
       monthTags: (newLink.value.monthTags || []).sort((a, b) => a - b),
       weekTags: (newLink.value.weekTags || []).sort((a, b) => a - b),
       holidayTag: newLink.value.holidayTag || null
