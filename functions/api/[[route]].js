@@ -290,13 +290,14 @@ async function handleGetLink(db, useKV) {
         return new Response('', { status: 404 })
       }
 
-      // 获取并返回图片内容
-      const imageResponse = await fetchImage(selectedUrl)
-      if (!imageResponse) {
-        return new Response('获取图片失败', { status: 500 })
-      }
-      
-      return imageResponse
+      // 返回 302 重定向
+      return new Response(null, {
+        status: 302,
+        headers: {
+          'Location': selectedUrl,
+          'Cache-Control': 'no-cache'
+        }
+      })
     } else {
       // 外部数据库实现...
       const links = await db.query('SELECT * FROM links')
@@ -306,16 +307,17 @@ async function handleGetLink(db, useKV) {
         return new Response('', { status: 404 })
       }
 
-      // 获取并返回图片内容
-      const imageResponse = await fetchImage(selectedUrl)
-      if (!imageResponse) {
-        return new Response('获取图片失败', { status: 500 })
-      }
-      
-      return imageResponse
+      // 返回 302 重定向
+      return new Response(null, {
+        status: 302,
+        headers: {
+          'Location': selectedUrl,
+          'Cache-Control': 'no-cache'
+        }
+      })
     }
   } catch (error) {
-    return new Response('获取图片失败', { status: 500 })
+    return new Response('获取链接失败', { status: 500 })
   }
 }
 
@@ -366,7 +368,7 @@ function getDayLinks(links, now) {
 
   return links.filter(link => {
     if (!link.holidayTag) return false
-    // 如果holidayTag是数组（日期范围），直接比较时间戳
+    // 如果holidayTag是数组（包含年份），直接比较时间戳
     if (Array.isArray(link.holidayTag)) {
       if (link.holidayTag.length !== 2) return false
       const startDate = new Date(link.holidayTag[0])
