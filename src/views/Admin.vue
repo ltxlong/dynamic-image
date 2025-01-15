@@ -1062,7 +1062,7 @@
                   <!-- 编辑弹窗中的月标签选择 -->
                   <div class="grid gap-1 content-start">
                     <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">月标签</span>
-                    <div class="grid grid-cols-3 auto-rows-min gap-2 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
+                    <div class="grid grid-cols-3 auto-rows-min gap-6 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
                       <button
                         v-for="month in 12"
                         :key="month"
