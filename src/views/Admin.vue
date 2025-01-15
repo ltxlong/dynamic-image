@@ -1067,7 +1067,7 @@
                         v-for="month in 12"
                         :key="month"
                         @click="toggleMonthTag(month, editingLink)"
-                        class="px-2 py-0.5 rounded-full text-sm font-medium transition-colors w-16 justify-self-center"
+                        class="px-2 py-0.5 rounded-full text-sm font-medium transition-colors w-14 justify-self-center"
                         :class="[
                           editingLink.monthTags?.includes(month)
                             ? (isDark ? 'bg-blue-900/50 text-blue-100' : 'bg-blue-100 text-blue-800')
