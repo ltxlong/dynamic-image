@@ -849,7 +849,7 @@
               <!-- 链接和说明 -->
               <div class="space-y-4">
                 <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-1">链接地址</label>
+                  <label class="block text-sm font-medium text-gray-300 mb-1">链接地址</label>
                   <input 
                     v-model="newLink.url" 
                     class="w-full p-2.5 border rounded-lg transition-colors focus:ring-1 focus:ring-sky-500 focus:border-sky-500 outline-none"
@@ -862,7 +862,7 @@
                   >
                 </div>
                 <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-1">备注说明</label>
+                  <label class="block text-sm font-medium text-gray-300 mb-1">备注说明</label>
                   <input 
                     v-model="newLink.description" 
                     class="w-full p-2.5 border rounded-lg transition-colors focus:ring-1 focus:ring-sky-500 focus:border-sky-500 outline-none"
@@ -921,7 +921,7 @@
                   </div>
 
                   <div class="grid gap-1 content-start">
-                    <label class="text-xs text-center text-gray-500">日标签</label>
+                    <label class="text-xs text-center text-gray-400">日标签</label>
                     <div class="p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
                       <DateRangePicker 
                         @update="updateNewLinkDateRange"
