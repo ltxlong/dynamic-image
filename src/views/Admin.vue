@@ -1062,12 +1062,12 @@
                   <!-- 编辑弹窗中的月标签选择 -->
                   <div class="grid gap-1 content-start">
                     <span class="text-xs text-center" :class="[isDark ? 'text-gray-400' : 'text-gray-500']">月标签</span>
-                    <div class="grid grid-cols-3 auto-rows-min gap-4 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
+                    <div class="grid grid-cols-3 auto-rows-min gap-2 p-2 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
                       <button
                         v-for="month in 12"
                         :key="month"
                         @click="toggleMonthTag(month, editingLink)"
-                        class="px-2 py-0.5 rounded-full text-sm font-medium transition-colors w-12 justify-self-center"
+                        class="px-2 py-0.5 rounded-full text-sm font-medium transition-colors w-16 justify-self-center"
                         :class="[
                           editingLink.monthTags?.includes(month)
                             ? (isDark ? 'bg-blue-900/50 text-blue-100' : 'bg-blue-100 text-blue-800')
