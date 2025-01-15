@@ -878,7 +878,7 @@
 
               <!-- 标签组 -->
               <div class="grid gap-6">
-                <label class="block text-sm font-medium text-gray-700">标签信息</label>
+                <label class="block text-sm font-medium text-gray-300">标签信息</label>
                 <div class="grid grid-cols-3 gap-4">
                   <!-- 新增链接弹窗中的月标签选择 -->
                   <div class="grid gap-1 content-start">
