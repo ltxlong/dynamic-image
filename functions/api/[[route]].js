@@ -387,7 +387,7 @@ function getDayLinks(links, now) {
 
 // 获取周标签匹配的链接
 function getWeekLinks(links, now) {
-  const weekDay = now.getDay() + 1 // 1-7
+  const weekDay = now.getDay()
   console.log('获取weekday: ', weekDay);
   return links.filter(link => 
     Array.isArray(link.weekTags) && link.weekTags.includes(weekDay)
@@ -396,7 +396,7 @@ function getWeekLinks(links, now) {
 
 // 获取月标签匹配的链接
 function getMonthLinks(links, now) {
-  const month = now.getMonth() + 1 // 1-12
+  const month = now.getMonth()
   console.log('获取month: ', month);
   return links.filter(link => link.monthTag === month)
 }
