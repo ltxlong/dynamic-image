@@ -396,7 +396,7 @@ function getWeekLinks(links, now) {
 
 // 获取月标签匹配的链接
 function getMonthLinks(links, now) {
-  const month = now.getMonth()
+  const month = now.getMonth() + 1
   console.log('获取month: ', month);
   return links.filter(link => link.monthTag === month)
 }
