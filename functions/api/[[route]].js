@@ -327,7 +327,7 @@ function selectLink(links, settings) {
   // 只选择激活状态的链接
   let filteredLinks = links.filter(link => link.active)
   if (!filteredLinks.length) return ''
-
+  console.log('displaymode: ', settings.displayMode)
   // 如果是随机模式或没有设置模式，直接随机返回
   if (!settings.displayMode || settings.displayMode === 1) {
     return getRandomLink(filteredLinks)
@@ -340,18 +340,21 @@ function selectLink(links, settings) {
 
     // 1. 先查找日标签
     selectedLinks = getDayLinks(filteredLinks, now)
+    console.log('日标签: ', selectedLinks)
     if (selectedLinks.length) {
       return getRandomLink(selectedLinks)
     }
 
     // 2. 查找周标签
     selectedLinks = getWeekLinks(filteredLinks, now)
+    console.log('周标签: ', selectedLinks)
     if (selectedLinks.length) {
       return getRandomLink(selectedLinks)
     }
 
     // 3. 查找月标签
     selectedLinks = getMonthLinks(filteredLinks, now)
+    console.log('月标签: ', selectedLinks)
     if (selectedLinks.length) {
       return getRandomLink(selectedLinks)
     }
