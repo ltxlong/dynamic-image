@@ -398,7 +398,9 @@ function getWeekLinks(links, now) {
 function getMonthLinks(links, now) {
   const month = now.getMonth() + 1
   console.log('获取month: ', month);
-  return links.filter(link => link.monthTag === month)
+  return links.filter(link => 
+    Array.isArray(link.monthTags) && link.monthTags.includes(month)
+  )
 }
 
 // 从链接数组中随机选择一个链接
